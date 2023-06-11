@@ -4,52 +4,55 @@ import React from 'react';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs bg-secondary text-light">
-      <li className="nav-item border border-dark border-3">
+<div>
+    <ul className="nav nav-tabs bg-dark text-light border border-dark border-3">
+      <li className="nav-item border border-dark">
         <a
           href="#home"
           onClick={() => handlePageChange('Home')}
           //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
 
-          className={currentPage === 'Home' ? 'nav-link active bg-success' : 'nav-link text-light'}
+          className={currentPage === 'Home' ? 'nav-link active bg-success' : 'nav-link text-light bg-secondary'}
         >
           Home
         </a>
       </li>
-      <li className="nav-item border border-dark border-3">
+      <li className="nav-item border border-dark">
         <a
-          href="#about"
-          onClick={() => handlePageChange('About')}
+          href="#Portfolio"
+          onClick={() => handlePageChange('Portfolio')}
           //  TODO: Add a comment explaining what this logic is doing
 
-          className={currentPage === 'About' ? 'nav-link active bg-success' : 'nav-link text-light'}
+          className={currentPage === 'Portfolio' ? 'nav-link active bg-success' : 'nav-link text-light bg-secondary'}
         >
-          About
+          Portfolio
         </a>
       </li>
-      <li className="nav-item border border-dark border-3">
+      <li className="nav-item border border-dark">
         <a
           href="#blog"
           onClick={() => handlePageChange('Blog')}
           //  TODO: Add a comment explaining what this logic is doing
 
-          className={currentPage === 'Blog' ? 'nav-link active bg-success' : 'nav-link text-light'}
+          className={currentPage === 'Blog' ? 'nav-link active bg-success' : 'nav-link text-light bg-secondary'}
         >
           Blog
         </a>
       </li>
-      <li className="nav-item border border-dark border-3">
+      <li className="nav-item border border-dark">
         <a
           href="#contact"
           //  TODO: Add a comment explaining what this logic is doing
 
           onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active bg-success' : 'nav-link text-light'}
+          className={currentPage === 'Contact' ? 'nav-link active bg-success' : 'nav-link text-light bg-secondary'}
         >
           Contact
         </a>
       </li>
     </ul>
+    </div>
+
   );
 }
 
