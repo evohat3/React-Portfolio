@@ -20,7 +20,10 @@ export default function PortfolioContainer() {
     if (currentPage === 'Resume') {
       return <Resume />;
     }
-    return <Contact />;
+    if (currentPage === 'Contact') {
+      return <Contact />;
+    }
+    return <AboutMe />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
