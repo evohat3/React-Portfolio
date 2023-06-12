@@ -2,7 +2,22 @@ import React from 'react';
 
 export default function Portfolio() {
   return (
-    <div>
+    <div
+    className="bg-dark"
+      style={{
+        backgroundImage: `url('https://i.imgur.com/agmtalV.jpg')`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        minHeight: '100vh',
+      }}
+    
+    >
+
+
+
+
+
       <h1>Portfolio Page</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
