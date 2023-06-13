@@ -2,16 +2,7 @@ import React from 'react';
 
 export default function Resume() {
   return (
-    <div
-    className="bg-dark"
-      style={{
-        backgroundImage: `url('https://i.imgur.com/agmtalV.jpg')`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        minHeight: '100vh',
-      }}
-    >
+    <div>
       <h1>Blog Page</h1>
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
