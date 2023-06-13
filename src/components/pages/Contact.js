@@ -2,16 +2,7 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <div
-    className="bg-dark"
-      style={{
-        backgroundImage: `url('https://i.imgur.com/agmtalV.jpg')`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        minHeight: '100vh',
-      }}
-    >
+    <div>
       <h1>Contact Page</h1>
       <p>
         Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
