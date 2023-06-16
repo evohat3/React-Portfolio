@@ -30,7 +30,7 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="has-background-link-light">
+    <div className="has-background-link-light ">
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange}/>
       {renderPage()}
       <Footer />
