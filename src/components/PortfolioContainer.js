@@ -5,9 +5,10 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Footer from './Footer'
+import Home from './pages/Home'
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('AboutMe');
 
   // TODO: Add a comment describing the functionality of this method
   const renderPage = () => {
@@ -20,20 +21,16 @@ export default function PortfolioContainer() {
     if (currentPage === 'Resume') {
       return <Resume />;
     }
-    return <Contact />;
+    if(currentPage === 'Contact') {
+      return <Contact />
+    } else 
+    return <Home />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div     className="bg-dark"
-    style={{
-      backgroundImage: `url('https://i.imgur.com/agmtalV.jpg')`,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      minHeight: '100vh',
-    }}>
+    <div     className="has-background-link-light">
       {/* // TODO: Add a comment describing what we are passing as props */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange}/>
       {/* // TODO: Add a comment explaining what is happening on the following line */}
