@@ -1,0 +1,16 @@
+.project-slot:hover .project-label {
+    border: 4px solid #ff0000;
+  }
+
+
+  .project-slot:hover {
+    transform: scale(1.2);
+    border: 4px solid #ff0000;
+  }
+
+    @media screen and (max-width: 768px) {
+      .columns {
+        flex-direction: column;
+  }
+
+}

@@ -6,12 +6,10 @@ export default function ProjectSlot(props) {
     <a href={props.url}>
 
 <div class="section ">
-    <div class="has-background-light border border-2 border-black float-end">
-      <div className="has-background-dark has-text-light"> {props.name}</div>
+    <div class="border border-2 border-black float-end">
+      <div className="has-background-dark has-text-light project-label"> {props.name}</div>
     </div>
   </div>
-
-
 </a>
     )
 }
