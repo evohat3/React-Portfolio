@@ -1,10 +1,11 @@
 
+
 function Header() {
 
     return (
-        <div className=" has-text-centered ">
+        <div className=" has-text-centered is-size-1 ">
             
-            <div className="is-size-3">Nigel Poblete</div>
+            Nigel Poblete
 
         </div>
     )

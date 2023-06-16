@@ -8,7 +8,7 @@ export default function Portfolio() {
 
 <div>
 
-    <p className="border border-3 border-dark has-text-centered has-text-dark m-3">Portfolio Projects</p>
+    <h1 className="border border-3 border-dark has-text-centered m-3 is-size-1 has-background-info has-text-light">Portfolio Projects</h1>
 
 
     <div className="columns">
