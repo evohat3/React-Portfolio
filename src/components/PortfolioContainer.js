@@ -10,7 +10,7 @@ import Home from './pages/Home'
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('AboutMe');
 
-  // TODO: Add a comment describing the functionality of this method
+
   const renderPage = () => {
     if (currentPage === 'AboutMe') {
       return <AboutMe />;
@@ -30,10 +30,8 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div     className="has-background-link-light">
-      {/* // TODO: Add a comment describing what we are passing as props */}
+    <div className="has-background-link-light">
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange}/>
-      {/* // TODO: Add a comment explaining what is happening on the following line */}
       {renderPage()}
       <Footer />
     </div>
