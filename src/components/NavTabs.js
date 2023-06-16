@@ -1,18 +1,11 @@
 import React from 'react';
-import Header from './Header'
+
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-<div className='navbar-menu is-active has-background-black border border-danger border-3'>
+<div className='navbar-menu is-active'>
 
-<div className='navbar-start border border-3 border-light bg-success w-50'>
-  <Header />
-  </div>
 
-{/*TODO light-dark reach switch  */}
-    <div className='section has-content-centered'>
-      <div className='has-text-centered'>Button</div>
-    </div>
 
   <div className='navbar-end border border-3 '>
     <ul className="nav nav-tabs bg-dark text-light border border-dark border-5 ">

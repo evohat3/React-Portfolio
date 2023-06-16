@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectSlot from './ProjectSlot';
+import ProjectSlot from '../ProjectSlot';
 import '../utils/ProjectSlot.css'
 import { counter, coordi, weather, scheduler, gitFood, ezText, } from '../utils/projectdata'
 import { projectSlotStyle,  } from '../utils/projectstyle'
